@@ -1,11 +1,14 @@
+/* Genel ayarlar */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f7f7f7;
+  background: #f4f4f4;
   color: #333;
+  line-height: 1.6;
 }
 
+/* Üst kısım (header) */
 header {
   background: #2c3e50;
   color: white;
@@ -13,20 +16,37 @@ header {
   text-align: center;
 }
 
+header h1 {
+  margin: 0;
+}
+
+/* Menü */
+nav {
+  margin-top: 0.5rem;
+}
+
 nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
+/* Ana içerik */
 main {
   padding: 2rem;
+  background: white;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* Alt kısım (footer) */
 footer {
   background: #2c3e50;
   color: white;
