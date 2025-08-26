@@ -1,1 +1,0 @@
-# kodmekanizmamuh-oss.github.io
