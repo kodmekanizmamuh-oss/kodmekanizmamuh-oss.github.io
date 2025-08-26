@@ -1,56 +1,120 @@
-/* Genel ayarlar */
 body {
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
   color: #333;
-  line-height: 1.6;
 }
 
-/* Üst kısım (header) */
 header {
-  background: #2c3e50;
+  background: #1e1e2f;
   color: white;
-  padding: 1rem;
-  text-align: center;
+  padding: 15px 0;
 }
 
-header h1 {
-  margin: 0;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
 }
 
-/* Menü */
-nav {
-  margin-top: 0.5rem;
-}
-
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
+.logo {
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-/* Ana içerik */
-main {
-  padding: 2rem;
-  background: white;
-  margin: 2rem auto;
-  max-width: 900px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Alt kısım (footer) */
-footer {
-  background: #2c3e50;
+.nav-links li a {
+  text-decoration: none;
   color: white;
+  padding: 8px 15px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background: #ff4757;
+  border-radius: 5px;
+}
+
+.hero {
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff4757;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e84118;
+}
+
+.content {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.card-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 200px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  background: #1e1e2f;
+  color: white;
 }
